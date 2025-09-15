@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate"/>
+    <title>The Pulse</title>
+    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style-in-common.css">
+    <link rel="icon" href="images/logo/UI_minilogo.png">
+    <meta name="keywords" content="The Pulse">
+    <meta name="description" content="The Pulse - Maksym Demchenko">
+    <meta name="author" content="Maksym Demchenko">
+    <meta name="robots" content="all">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ultra&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="top"></div>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="left-nav">
+                <div class="nav-item profile-icon">
+                    <a href="profile.html">
+                        <img width="512" alt="Antu adress-book-new" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Antu_adress-book-new.svg/512px-Antu_adress-book-new.svg.png?20180505152259">
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo/UI.png" alt="The Pulse Logo"></a>
+            </div>
+            <div class="right-nav">
+                <div class="nav-item">
+                    <a href="basket.html">Basket</a>
+                </div>
+                <div class="nav-item hamburger">
+                    <div class="bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hamburger-menu">
+        <div class="hamburger-columns">
+            <div class="hamburger-content">
+                <h1>Collections</h1>
+                <div class="menu-links">
+                    <a href="vinyls.html" class="hamburger-link">Vinyl Records</a>
+                </div>
+            </div>
+    
+            <div class="hamburger-content">
+                <h1>Media & Art</h1>
+                <div class="menu-links">
+                    <a href="posters.html" class="hamburger-link">Posters and Art</a>
+                </div>
+            </div>
+    
+            <div class="hamburger-content">
+                <h1>Explore</h1>
+                <div class="menu-links">
+                    <a href="events.html" class="hamburger-link">Events</a>
+                </div>
+            </div>
+    
+            <div class="hamburger-content">
+                <h1>About</h1>
+                <div class="menu-links">
+                    <a href="about-us.html" class="hamburger-link">About Us</a>
+                    <a href="fanclub.html" class="hamburger-link">Join Us</a>
+                </div>
+            </div>
+    
+            <div class="hamburger-content">
+                <h1>Support</h1>
+                <div class="menu-links">
+                    <a href="policy.html" class="hamburger-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <h2>Song Of The Week</h2>
+        <div class="hamburger-song-of-the-week">
+            <div class="song-details">
+                <img src="" alt="Album Cover" class="album-cover" id="album-cover">
+                <div class="song-info">
+                    <div class="song-text-details">
+                        <p class="song-title" id="song-title">Song Title</p>
+                        <p class="artist-name" id="artist-name">Artist Name</p>
+                    </div>
+                    <div class="progress-container">
+                        <span id="current-time">0:00</span>
+                        <div class="progress-bar" id="progress-bar">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                        <span id="duration">0:00</span>
+                    </div>
+                    <div class="controls">
+                        <button id="like-button" class="like-button">
+                            <img id="like-icon" src="images/icons/heart.svg" alt="Like">
+                            <img id="liked-icon" src="images/icons/filled-heart.svg" alt="Liked" style="display: none;">
+                        </button>
+                        <button id="play-pause" class="play-button">
+                            <img src="images/icons/play-button.svg" alt="Play" id="play-icon">
+                        </button>
+                        <div class="volume-control">
+                            <img src="images/icons/speaker.svg" alt="Volume" class="speaker-icon">
+                            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1">
+                        </div>
+                    </div>
+                    <audio id="audio-player">
+                        <source src="" type="audio/mpeg" id="audio-source">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="key-disclaimer">
+        <div class="key-message">
+            <p>For easier navigation, use the <span class="key-icon">←</span> and <span class="key-icon">→</span> arrow keys!</p>
+        </div>
+    </section>    
+    <section id="about-us" class="about-us">
+        <div class="about-us-container">
+            <div class="image-section">
+                <img src="images/firm-photos/workers.jpg" alt="Innovation Teamwork">
+                <div class="decorative-lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="text-section">
+                <h1>Innovation at the Core</h1>
+                <p>
+                    At The Pulse, innovation drives everything we do. We believe in creating solutions that push boundaries
+                    and bring value to businesses and communities worldwide. Our commitment to excellence has made us a trusted partner
+                    for companies across the globe. Through pioneering technologies and creative designs, we strive to stay at the forefront of the industry, continuously evolving and improving our offerings.
+                </p>
+            </div>
+        </div>
+        <div class="about-us-container">
+            <div class="text-section">
+                <h1>Our Mission</h1>
+                <p>
+                    Our mission is to inspire and empower people through innovative designs and exceptional services.
+                    By combining cutting-edge technology with unmatched creativity, we craft experiences that leave a lasting impression.
+                    We are dedicated to making a positive impact on the world, whether it's through our sustainable practices, community initiatives, or groundbreaking projects that redefine what's possible.
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="images/firm-photos/designer.jpg" alt="Mission Creativity">
+                <div class="decorative-lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us-container">
+            <div class="image-section">
+                <img src="images/firm-photos/awards.jpg" alt="Industry Awards">
+                <div class="decorative-lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="text-section">
+                <h1>Industry Respect</h1>
+                <p>
+                    The Pulse has earned a respected place in the industry through our unwavering dedication to quality and innovation.
+                    Our work has been recognized with numerous awards and accolades, reflecting our commitment to excellence.
+                    We take pride in the trust and respect we have built with our clients, partners, and peers, which motivates us to continue pushing the boundaries of what is possible.
+                </p>
+            </div>
+        </div>
+        <div class="about-us-container">
+            <div class="text-section">
+                <h1>Collaboration with Bands</h1>
+                <p>
+                    Our collaboration with numerous bands and artists is at the heart of what we do. At The Pulse, we work closely with
+                    musicians to create unique, high-quality merchandise that resonates with their fans. Our partnerships are built on trust,
+                    creativity, and a shared passion for music. Together, we bring artists' visions to life, offering fans an unforgettable experience and a tangible connection to the music they love.
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="images/firm-photos/collaboration.jpg" alt="Collaboration with Bands and Artists">
+                <div class="decorative-lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us-container">
+            <div class="image-section">
+                <img src="images/firm-photos/world.gif" alt="Global Reach">
+                <div class="decorative-lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="text-section">
+                <h1>Global Reach</h1>
+                <p>
+                    With a presence in multiple countries, The Pulse has a truly global reach. We are proud to partner with leading companies
+                    and artists worldwide, bringing our innovative solutions and exceptional services to a diverse audience.
+                    Our global network enables us to deliver high-quality products and experiences to fans and clients wherever they are, making The Pulse a trusted name across the globe.
+                </p>
+            </div>
+        </div>
+        <div class="about-us-container">
+            <div class="text-section">
+                <h1>Our Team</h1>
+                <p>
+                    Behind every success story is a team of dedicated professionals. At The Pulse, our team consists of
+                    passionate individuals who are experts in their fields. Together, we work towards a common goal of delivering
+                    excellence at every step. Our collaborative culture fosters innovation, creativity, and a relentless pursuit of perfection, ensuring that we not only meet but exceed our clients' expectations.
+                    To learn more about our team members, check out the "Our Team" section in the navigation menu.
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="images/firm-photos/team.jpg" alt="Team Collaboration">
+                <div class="decorative-lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us-container">
+            <div class="image-section">
+                <img src="images/firm-photos/join.jpg" alt="Join Us">
+                <div class="decorative-lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="text-section">
+                <h1>Join Us</h1>
+                <p>
+                    YOU! YES, YOU CAN BE ONE OF US! JOIN NOW and become a part of The Pulse family. We are always looking for passionate and talented individuals to join our team. Whether you're an artist, a designer, or a tech enthusiast, there's a place for you here. Click the button below to join our fan club and stay updated with the latest news and opportunities.
+                </p>
+                <a href="fanclub.html" class="join-button">Join Our Fan Club</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------ -->
+
+    <section class="page-up">
+        <img src="images/gif/party.gif" alt="Party">
+        <div class="content">
+            <a href="#top" class="scroll-to-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+                </svg>
+                <h1 class="back-to-top">Back to Top</h1>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section social-media">
+                <h4>Our Social Media</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ThePulse" class="social-icon icon1" data-label="Facebook"></a>
+                    <a href="https://www.instagram.com/ThePulse" class="social-icon icon2" data-label="Instagram"></a>
+                    <a href="https://www.tiktok.com/ThePulse" class="social-icon icon3" data-label="TikTok"></a>
+                    <a href="https://www.twitter.com/ThePulse" class="social-icon icon4" data-label="Twitter"></a>
+                    <a href="https://www.reddit.com/ThePulse" class="social-icon icon5" data-label="Reddit"></a>
+                </div>
+            </div>
+            <div class="footer-section navigation">
+                <h4>Page Navigation</h4>
+                <ul>
+                    <li><a href="#greeting-screen">Greeting Screen</a></li>
+                    <li><a href="#new-drop">New Drop</a></li>
+                    <li><a href="#featured-products">Featured Products</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#upcoming-events">Upcoming Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Subscribe to the Newsletter</h4>
+                <form action="/subscribe" method="post">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="submit">Sign up</button>
+                </form>
+                <p class="disclaimer">
+                    *By signing up for our newsletter, you consent to the processing of your personal data in order to receive information about the latest products, promotions and events. More information on the processing of personal data can be found in our <a href="#">Privacy Policy</a>.*
+                </p>
+            </div>
+        </div>
+    </footer>    
+
+    <script src="js/about-us.js"></script>
+    <script src="js/js-in-common.js"></script>
+
+</body>
+</html>
