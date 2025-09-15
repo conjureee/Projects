@@ -1,0 +1,707 @@
+/* 1-st Section - Greeting Screen */
+
+.greet-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.greet-screen .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.greet-screen .slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+
+.greet-screen .slide video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.greet-screen .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: 'Righteous', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2vh;
+    max-width: 90%;
+}
+
+.greet-screen .slide-text-left .content {
+    margin-right: auto;
+    margin-left: 10vw;
+}
+
+.greet-screen .content p {
+    margin: 0;
+    font-size: 5vh;
+}
+
+.content p:first-child { display: block; }
+
+.greet-screen .content p span, .greet-screen .content p .special {
+    margin-right: 2vh;
+    display: inline-block;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15vh;
+    text-shadow: 0.3vh 0.3vh 1vh rgba(0, 0, 0, 0.8);
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.greet-screen .slide-text-left .content p span, .greet-screen .slide-text-left .content p .special {
+    font-size: 10vh;
+}
+
+.greet-screen .content p .text {
+    font-family: "Caladea", serif;
+    letter-spacing: 0.5vh;
+    animation: softGlow 1s infinite alternate;
+}
+
+.greet-screen .content p .special {
+    color: #24ab24;
+    text-shadow: 0.3vh 0.3vh 1vh rgba(0, 0, 0, 0.8), 0 0 2vh rgba(36, 171, 36, 0.5), 0 0 4vh rgba(36, 171, 36, 0.5);
+    font-family: 'Bevan', sans-serif;
+    stroke: 0.1vh;
+    stroke-color: black;
+    text-outline: 0.1vh black;
+    text-stroke: 0.1vh black;
+    letter-spacing: 0.5vh;
+    animation: glow 1s infinite alternate;
+}
+
+.text {
+    opacity: 0;
+    font-weight: bold;
+    transition: opacity 1s ease-in-out;
+}
+
+.text.visible { opacity: 1; }
+
+.dots {
+    position: absolute;
+    bottom: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    z-index: 3;
+}
+
+.dots div {
+    width: 2vh;
+    height: 2vh;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dots div.active { background-color: #fff; }
+
+.greet-screen .slide.active video {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+
+/* Main */
+
+main { min-height: 500vh; }
+
+/* 2-nd Section - Grid of Bands */
+
+.grid-container {
+    height: 81vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vh;
+}
+
+.grid-item {
+    height: 27vh;
+    border: 0.2vh solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+
+.grid-item:hover img { opacity: 0.3; }
+
+.grid-item .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 1s ease;
+}
+
+.grid-item:hover .logo {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.grid-item:hover { background-color: rgba(0, 0, 0, 0.5); }
+
+.grid-item-2x2 {
+    height: 55.2vh;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* 3-rd section - Products */
+
+.slider-container {
+    display: flex;
+    gap: 2vw;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 2vh 0;
+}
+
+.product-card {
+    position: relative;
+    width: 23.1%;
+    height: 60vh;
+    flex-shrink: 0;
+    border-radius: 1vh;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-1vh);
+    box-shadow: 0 0 3vh rgba(255, 255, 255, 0.5);
+}
+
+.product-card .card-content {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1vh;
+    text-align: center;
+    background-color: #666;
+}
+
+.product-card .card-content h3 {
+    margin: 0;
+    padding: 1vh;
+    font-size: 2vh;
+    background-color: #24ab24;
+    border-radius: 1vh 1vh 0 0;
+}
+
+.product-card .card-content img {
+    max-width: 100%;
+    max-height: 25vh;
+    margin: 1vh auto;
+    object-fit: contain;
+}
+
+.product-card .band-logo {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.product-card .band-logo img {
+    max-width: 50%;
+    height: auto;
+    max-height: 100%;
+}
+
+.product-card p {
+    font-size: 1.6vh;
+    background-color: #444;
+    padding: 1vh;
+    margin: 0;
+    border-radius: 0 0 1vh 1vh;
+    line-height: 1.4;
+}
+
+.product-card .hover-overlay {
+    padding: 1vh;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .hover-overlay { opacity: 1; }
+
+.product-card:hover .card-content {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hover-overlay .hover-top,
+.hover-overlay .hover-middle,
+.hover-overlay .hover-bottom {
+    margin: 1vh 0;
+    text-align: center;
+}
+
+.hover-overlay .hover-top,
+.hover-overlay .hover-middle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hover-overlay .hover-top img {
+    max-width: 80%;
+    max-height: 20vh;
+    object-fit: contain;
+    margin-bottom: auto;
+}
+
+.hover-overlay .hover-middle {
+    width: 80%;
+    margin: auto;
+}
+
+.hover-overlay .hover-bottom {
+    margin-top: auto;
+    font-weight: bold;
+    background-color: #24ab24;
+    padding: 2vh;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0 0 1vh 1vh;
+    transition: background-color 0.5s ease;
+}
+
+.hover-overlay .hover-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hover-overlay .hover-bottom:hover {
+    background-color: #1a921a;
+    cursor: pointer;
+}
+
+.slider-container::-webkit-scrollbar { height: 1vh; }
+
+.slider-container::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 1vh;
+}
+
+.slider-container::-webkit-scrollbar-track {
+    border-radius: 1vh;
+    background: #222;
+}
+
+/* 4-th section - FAQ */
+
+.faq-accordion {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    cursor: pointer;
+    border-bottom: 0.1vh solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-question {
+    margin: 0;
+    padding: 2vh;
+    font-size: 3vh;
+    background-color: #f7f7f7;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 3vh;
+    background-color: #fff;
+    font-size: 2vh;
+    border-top: 0.1vh solid #ddd;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+}
+
+.accordion-item.active .accordion-answer {
+    max-height: 20vh;
+    padding: 3vh;
+}
+
+.accordion-item:hover .accordion-question {
+    background-color: #e0e0e0;
+}
+
+/* 5-th section - Blog */
+
+.blog-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2vh;
+    height: 168vh;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.block {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 3vh;
+    overflow: hidden;
+    transition: height 0.3s ease, transform 0.3s ease;
+}
+
+.block1 {
+    margin-top: 2vh;
+    background-image: url("images/bands/Slipknot.jpg");
+}
+
+.block2 {
+    background-image: url("images/bands/LimpBizkit.jpg");
+}
+
+.block3 {
+    background-image: url("images/bands/Megadeth.webp");
+}
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
+
+.text-overlay {
+    height: 12vh;
+    position: absolute;
+    width: 100%;
+    color: white;
+    padding: 2vh 2vh 0 2vh;
+    text-align: left;
+    overflow: hidden;
+    transition: height 0.6s ease, transform 0.6s ease;
+}
+
+.block1 .text-overlay { bottom: 1vh; }
+
+.block2 .text-overlay, .block3 .text-overlay { bottom: -3vh; }
+
+.text-overlay.expanded {
+    height: auto;
+    bottom: 0;
+}
+
+.blog-heading {
+    margin: 0;
+    font-size: 3vh;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: height 0.6s ease;
+}
+
+.blog-heading.expanded {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+}
+
+.blog-description {
+    margin: 1vh 0 0;
+    font-size: 1.5vh;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: height 0.6s ease;
+}
+
+.blog-description.expanded {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+}
+
+.blog-heading, .blog-description {
+    width: 60%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.read-more {
+    display: block;
+    width: 25%;
+    opacity: 0;
+    position: absolute;
+    right: 5.5vh;
+    bottom: 0;
+    background-color: #24ab24;
+    color: white;
+    border: none;
+    padding: 1vh 2vw;
+    border-radius: 1vh 0 2vh 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0.3vh 0.3vh 1vh rgba(0, 0, 0, 0.8), 0 2vh rgba(36, 171, 36, 0.5), 0 0 4vh rgba(36, 171, 36, 0.5);
+    animation: glow 1s infinite alternate;
+    transition: opacity 0.6s ease, transform 0.6s ease, background-color 0.3s ease;
+    transform: translateY(10px);
+}
+
+.read-more:hover {
+    background-color: #1e921e;
+    text-shadow: 0.3vh 0.3vh 1vh rgba(0, 0, 0, 0.8), 0 0 4vh rgba(36, 171, 36, 0.8), 0 0 6vh rgba(36, 171, 36, 1);
+}
+
+.block:hover .read-more {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.block:hover .text-overlay {
+    height: auto;
+}
+
+.block1:hover .text-overlay { transform: translateY(-2vh); }
+
+.block2:hover .text-overlay, .block3:hover .text-overlay { transform: translateY(-5vh); }
+
+.block:hover .blog-description {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+}
+
+/* 6-th section - Ticket Carousel */
+
+.upcoming-events {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+  
+.slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+  
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0;
+}
+
+.left-arrow { left: 0; }
+
+.right-arrow { right: 0; }
+
+.slider-arrow svg {
+    fill: white;
+    width: 5vh;
+    height: 5vh;
+    background-color: #222;
+    transition: transform 0.3s ease;
+    padding: 0.5vh;
+}
+
+.left-caret { border-radius: 0 2vh 2vh 0; }
+
+.right-caret { border-radius: 2vh 0 0 2vh; }
+
+.slider-arrow svg:hover {
+    transform: scale(1.1);
+}
+
+
+.slider-arrow svg:hover {
+    transform: scale(1.1);
+}
+  
+.slider-track {
+    display: flex;
+    transition: transform 0.6s ease;
+    height: 100%;
+    align-items: center;
+}
+  
+.ticket {
+    flex: 0 0 100%;
+    height: 100%;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.3);
+    display: flex;
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: transform 0.6s ease;
+}
+  
+.ticket.active {
+    transform: scale(1);
+}
+  
+.ticket-left {
+    border-radius: 2vh;
+    flex: 0 0 20%;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+    color: white;
+    text-align: center;
+}
+  
+.ticket-left img {
+    height: auto;
+    width: 100%;
+    transform: rotate(90deg);
+}
+  
+.ticket-right {
+    flex: 1;
+    border-radius: 2vh;
+    position: relative;
+    color: white;
+    font-size: 3vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/bands/Slipknot.jpg");
+}
+
+.band-mini-logo {
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+}
+
+.band-mini-logo img {
+    border-radius: 50%;
+    height: 10vh;
+    width: 10vh;
+    transition: transform 0.6s ease;
+}
+
+.band-mini-logo img:hover {
+    transform: scale(1.1);
+}
+
+.band-description {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2vh;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.band-name {
+    font-size: 5vh; 
+    margin-bottom: 1vh;
+}
+
+.tour-type {
+    font-size: 4vh;
+    margin-bottom: 1vh;
+}
+
+.tour-date {
+    font-size: 3vh;
+}
+
+.gradient {
+    position: absolute;
+    bottom: 0;
+    border-radius: 2vh;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
