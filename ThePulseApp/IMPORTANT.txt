@@ -1,0 +1,1 @@
+If you want the code to run better, try making "js" and "css" folders and then place .css files to "css" folder, same with "js" folder, but with .js) Unfortunately, there are too many pictures, so I cannot load all of them((
