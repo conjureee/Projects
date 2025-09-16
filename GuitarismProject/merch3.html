@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+   <meta charset="UTF-8">
+    <title>Guitarism</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="icon" href="images/guitar.png">
+    <meta name="keywords" content="Projekt podsumowujący">
+    <meta name="description" content="Projekt podsumowujący - Maksym Demchenko">
+    <meta name="author" content="Maksym Demchenko">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="sidebar">
+           <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+           <div class="sidebar-container">
+              <div class="head"><p>Mój Koszyk</p></div>
+              <div id="cartItem" class="cart-item-container"><p>Koszyk jest niedokończony`</p></div>
+              <div class="foot">
+                 <h3>Całość:</h3>
+                 <h2 id="total">$0.00</h2>
+              </div>
+           </div>
+        </div>
+     </div>
+     <header>
+        <a href="index.html" class="logo"><img src="images/guitarism.png" alt="logo firmy"></a>
+        <nav class="navbar">
+            <ul class="navMenu">
+                <li class="navItem">
+                    <a href="contact.html" class="navLink">Kontakt</a>
+                </li>
+                <li class="navItem">
+                    <a href="products.html" class="navLink">Produkty</a>
+                </li>
+                <li class="navItem">
+                    <a href="artists.html" class="navLink">Artyści</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+     </header>
+    <section id="main-container">
+        <section id="content">
+            <img src="images/lets-rock.png" alt="Example Image">
+        </section>
+        <section id="buy">
+            <div class="buy-block">
+                <article class="buy-content">
+                    <section class="buy-items">
+                        <img src="merch/hoodie0.png" alt="Sweatshirt Small Thing">
+                        <h5>Guitarism Small Thing Sweatshirt</h5>
+                    </section>
+                    <section class="buy-items2">
+                        <h1>$29.99</h1>
+                        <button href="#">Dodaj Do Koszyka</button>
+                    </section>
+                </article>
+            </div>
+        </section>
+    </section>
+    <main>
+        <article class="slideshow-container">
+            <h2 class="hidden">Guitarism Small Thing Sweatshirt</h2>
+            <div class="hidden mySlides fade">
+                <img src="merch/hoodie0.png" style="width: 100%;">
+            </div>
+            <div class="hidden mySlides fade">
+                <img src="merch/hoodie1.png" style="width: 100%;">
+            </div>
+            <div class="hidden mySlides fade">
+                <img src="merch/hoodie2.png" style="width: 100%;">
+            </div>
+            <div class="hidden mySlides fade">
+                <img src="merch/hoodie3.png" style="width: 100%;">
+            </div>
+            <div class="hidden mySlides fade">
+                <img src="merch/hoodie4.png" style="width: 100%;">
+            </div>
+            <div class="hidden mySlides fade">
+                <img src="merch/hoodie5.png" style="width: 100%;">
+            </div>
+        </article>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="thumbnail-container">
+            <img class="hidden thumbnail" src="merch/hoodie0.png" onclick="currentSlides(1)">
+            <img class="hidden thumbnail" src="merch/hoodie1.png" onclick="currentSlides(2)">
+            <img class="hidden thumbnail" src="merch/hoodie2.png" onclick="currentSlides(3)">
+            <img class="hidden thumbnail" src="merch/hoodie3.png" onclick="currentSlides(4)">
+            <img class="hidden thumbnail" src="merch/hoodie4.png" onclick="currentSlides(5)">
+            <img class="hidden thumbnail" src="merch/hoodie5.png" onclick="currentSlides(6)">
+        </div>
+        <article class="extraArticle1" id="text">
+            <h2 class="hidden">Dołącz do naszej społeczności!</h2>
+            <p class="hidden">Czy szukasz idealnej koszulki, która wyrazi twoją pasję do muzyki i gry na gitarze? Pozwól, że przedstawimy Ci naszą najnowszą propozycję - koszulkę z logo Guitarismu! To niezwykłe połączenie stylu, komfortu i ekspresji muzycznej, które sprawi, że poczujesz się pewnie na scenie, zainspiruje Cię do tworzenia i podkreśli twoją miłość do gitary.
+            <br>
+            Niech ta koszulka stanie się Twoim znakiem rozpoznawczym - nie tylko na scenie, ale również w codziennym życiu. Wyraź swoją pasję, przekształć swój strój w manifestację muzyki i dołącz do rodziny Guitarismu już dziś!
+            <br>
+            Nie czekaj dłużej - dołącz do naszej społeczności i podkreśl swoją miłość do muzyki poprzez koszulkę z logo Guitarismu. Dostępna teraz, tylko dla prawdziwych fanów gitary i muzyki!</p>
+        </article>
+    </main>
+    <section class="features">
+        <h2 class="hidden">Cechy merchu</h2>
+        <article class="features-box">
+            <section class="feature-text" id="features">
+                <h6 class="hidden">Najlepsza Jakość!</h6>
+                <p class="hidden">Wykonana z najwyższej jakości materiałów, nasza koszulka zapewni Ci nie tylko wygodę noszenia, ale także trwałość, dzięki czemu będziesz mógł cieszyć się nią przez wiele lat. Jej wyjątkowy design z logo Guitarismu nie tylko przyciągnie uwagę innych muzyków, ale także pokaże światu, że jesteś częścią tej niesamowitej społeczności gitarzystów.</p>
+            </section>
+            <section class="hidden feature-photo">
+                <img src="merch/hoodie1.png" alt="Sweatshirt 1">
+            </section>
+        </article>
+    </section>
+    <a class="page-top" href="#header">
+        <p class="hidden">&#8657;</p>
+        <p class="hidden">Do góry</p>
+    </a>
+    <footer>
+        <div class="textBlockFooter">
+            <div class="footerSpace">
+                <nav class="hidden footerDivs divInFooter1">
+                    <h3>Podsekcje</h3>
+                    <p>
+                        <a href="#header">Góra</a>
+                        <a href="#text">Opis merchu</a>
+                        <a href="#text">Cechy merchu</a>
+                        <a href="#sponsors">Sponsorzy</a>
+                    </p>
+                </nav>
+                <nav class="hidden footerDivs divInFooter2">
+                    <h3>O Autorze</h3>
+                    <p>
+                        Autorem strony jest właściciel firmy Guitarism - Maksym Demchenko.<br>
+                        Chodzi do Zespołu Szkół Komunikacji w Poznaniu na ulicy Fredry 13.
+                        <br>
+                        Długi czas próbował on założyć własną firmę, lecz w pewien słoneczny<br>
+                        dzień, słuchając piosenki Pantera - Shattered, podstanowił on<br>
+                        zrobić ten jakże trudny pierwszy krok i tak powstała firma Guitarism.<br>
+                        Był to strzał w dziesiątkę, gdyż od razu ludzie zaczęli darzyć<br>
+                        sympatią trudy włożone w stronę i pomysł Maksyma.<br>
+                        Większość zaczęła polecać usługi Guitarismu znajomym, przez co<br>
+                        biznes Maksyma zaczął się kręcić niczym kula mocy.
+                    </p>
+                </nav>
+                <nav class="hidden footerDivs divInFooter3">
+                    <h3>Kontakt</h3>
+                    <div class="imagesInFooter">
+                        <a href="https://www.facebook.com/guitarismo/">
+                            <div class="boxes box1">
+                                <img src="images/fbLogo.png" alt="Facebook">
+                                <p>Odwiedź nasz Facebook</p>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/guitarism/">
+                            <div class="boxes box2">
+                                <img src="images/igLogo.png" alt="Instagram">
+                                <p>Odwiedź nasz Instagram</p>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/Guitarist_Mag">
+                            <div class="boxes box3">
+                                <img src="images/twitterLogo.png" alt="Twitter">
+                                <p>Odwiedź nasz Twitter</p>
+                            </div>
+                        </a>
+                        <a href="https://www.reddit.com/r/GuitaristsOfReddit/">
+                            <div class="boxes box4">
+                                <img src="images/redditLogo.png" alt="Reddit">
+                                <p>Odwiedź nasz Reddit</p>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="logoInFooter">
+            <img src="images/guitarism.png" alt="logo firmy">
+        </div>
+    </footer>
+    <article class="sponsors" id="sponsors">
+        <h5>Współpracownicy Guitarismu</h5>
+        <div class="slider2">
+            <a href="https://www.ibanez.com/eu/"><img src="images/ibanezLogo1.png" alt="Ibanez"></a>
+            <a href="https://www.gibson.com/en-US/"><img src="images/gibsonLogo1.png" alt="Gibson"></a>
+            <a href="https://pl.yamaha.com/index.html?gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhNF40DplSjuxdndUneYIa-3tgxlXw_u5G34ZMflaSJbq91i_O6mnFUaAt-wEALw_wcB"><img src="images/yamahaLogo1.png" alt="Yamaha"></a>
+            <a href="https://www.jacksonguitars.com/en-PL/start"><img src="images/jacksonLogo1.png" alt="Jackson"></a>
+            <a href="https://www.epiphone.com/en-US/"><img src="images/epiphoneLogo1.png" alt="Epiphone"></a>
+            <a href="https://www.charvel.com/"><img src="images/charvelLogo.png" alt="Charvel"></a>
+            <a href="https://marshall.com/"><img src="images/marshallLogo.png" alt="Marshall"></a>
+            <a href="https://www.espguitars.com/"><img src="images/espLogo.png" alt="ESP"></a>
+        </div>
+        <div class="slider2">
+            <a href="https://www.ibanez.com/eu/"><img src="images/ibanezLogo1.png" alt="Ibanez"></a>
+            <a href="https://www.gibson.com/en-US/"><img src="images/gibsonLogo1.png" alt="Gibson"></a>
+            <a href="https://pl.yamaha.com/index.html?gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhNF40DplSjuxdndUneYIa-3tgxlXw_u5G34ZMflaSJbq91i_O6mnFUaAt-wEALw_wcB"><img src="images/yamahaLogo1.png" alt="Yamaha"></a>
+            <a href="https://www.jacksonguitars.com/en-PL/start"><img src="images/jacksonLogo1.png" alt="Jackson"></a>
+            <a href="https://www.epiphone.com/en-US/"><img src="images/epiphoneLogo1.png" alt="Epiphone"></a>
+            <a href="https://www.charvel.com/"><img src="images/charvelLogo.png" alt="Charvel"></a>
+            <a href="https://marshall.com/"><img src="images/marshallLogo.png" alt="Marshall"></a>
+            <a href="https://www.espguitars.com/"><img src="images/espLogo.png" alt="ESP"></a>
+        </div>
+    </article>
+
+    <script src="main2.js"></script>
+</body>
+</html>

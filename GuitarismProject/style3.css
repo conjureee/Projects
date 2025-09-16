@@ -1,0 +1,336 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: Open Sans,sans-serif;
+   color: #fff;
+   background-color: #ccc;
+}
+#content {
+   transition: height 1s ease;
+   position: fixed;
+   bottom: 0;
+   margin: 0 auto;
+   transform: translateX(-50%);
+   background-color: lightgray;
+   z-index: 1;
+}
+#content img {
+   position: absolute;
+   bottom: 0;
+   transition: bottom 1s ease;
+   height: 13vh;
+   width: auto;
+}
+#main-container:hover #content {
+   height: 13vh;
+}
+#main-container:hover #content img {
+   bottom: 13vh;
+}
+#main-container:hover #buy {
+   height: 13vh;
+}
+#buy {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   z-index: 1;
+   display: flex;
+   align-items: center;
+   background-color: #fff;
+   border-top: 0.2vh solid #232323;
+   overflow: hidden;
+   transition: height 1s ease;
+   height: 0;
+}
+.buy-block {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.buy-content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.buy-items, .buy-items2 {
+   display: flex;
+   align-items: center;
+}
+.buy-items img, .buy-items2 a {
+   height: 10vh;
+   margin: 0 2vh;
+}
+.buy-items h5, .buy-items2 h1 {
+   font-size: 2.5vh;
+   color: #2b2b2b;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.buy-items h5 {
+   margin: 0 35vh 0 0;
+}
+.buy-items2 h1 {
+   margin: 0 0 0 35vh;
+}
+.buy-block button {
+   outline: none;
+   color: #fff;
+   margin-left: 1vh;
+   border-radius: 1vh 0 1vh 0;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   height: 4vh;
+   width: 18vh;
+   background-color: green;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+p {
+   font-size: 1.2vh;
+   margin: 0;
+}
+main {
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   height: 120vh;
+   display: flex;
+}
+.mySlides {
+   display: none;
+}
+.mySlides img {
+   width: 50vh;
+   height: 50vh;
+   border-radius: 5vh 0 5vh 0;
+}
+.slideshow-container {
+   max-width: 90%;
+   position: relative;
+   margin: auto auto 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.slideshow-container h2 {
+   font-size: 4.5vh;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: #2b2b2b;
+   font-weight: bolder;
+}
+.prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width: auto;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   background-color: rgba(0, 0, 0, 0.8);
+   user-select: none;
+}
+.prev {
+   left: 0;
+}
+.next {
+   right: 0;
+}
+.prev:hover, .next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+}
+.thumbnail-container {
+   max-width: 90%;
+   display: flex;
+   margin: 0 auto;
+ }
+.thumbnail {
+   margin: 0 0.5vh;
+   cursor: pointer;
+   height: 20vh;
+   width: 20%;
+   transition: background-color 0.5s ease;
+   border-radius: 5vh;
+}
+.thumbnail:hover {
+   outline: 0.5vh solid black;
+}
+.thumbnail.active {
+   outline: 0.5vh solid black;
+}
+.extraArticle1 p {
+   font-size: 1.6vh;
+   margin: 0.3vh;
+   padding: 0 3vh 0 0;
+}
+.extraArticle1 {
+   color: #232323;
+   height: 25vh;
+   width: 60%;
+   font-size: 1.7vh;
+}
+.extraArticle1 {
+   padding: 0;
+   margin: 0;
+}
+.features {
+   margin: 8vh 0 0 0;
+   height: 60vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+}
+.features h2:first-child {
+   margin: 0;
+   position: absolute;
+   left: 5%;
+   top: -4vh;
+}
+.features-box {
+   border-radius: 2vh 0 2vh 0;
+   background-color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 90%;
+   height: 80%;
+}
+.feature-text {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   width: 50%;
+   padding: 3vh;
+   color: #161616;
+}
+.feature-text h6 {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-align: center;
+   font-size: 2.5vh;
+   margin: 4vh 0;
+}
+.feature-text p {
+   letter-spacing: 0.1vh;
+   font-size: 2vh;
+}
+.feature-photo {
+   height: 100%;
+   width: 50%;
+}
+.feature-photo img {
+   outline: 0.1vh black solid;
+   width: 100%;
+   height: 100%;
+   border-radius: 2vh 0 2vh 0;
+}
+
+@media only screen and (max-width: 768px) {
+   h2 {
+      font-size: 2vh
+   }
+   main {
+      height: 100vh;
+      width: 100%;
+   }
+   .slideshow-container {
+      font-size: 3vh;
+      height: 50vh;
+      margin: 0;
+   }
+   .slideshow-container h2 {
+      text-align: center;
+   }
+   .feature-photo img, .buy-items h5, .thumbnail-container {
+      display: none;
+   }
+   .prev, .next {
+      top: 40%;
+   }
+   .thumbnail-container {
+      max-width: 90%;
+    }
+   .thumbnail {
+      border-radius: 0;
+      height: 10vh;
+    }
+    .extraArticle1 {
+      height: 50vh;
+      width: 100%;
+      padding: 2vh;
+    }
+   .feature-photo {
+      width: 0;
+   }
+   .feature-text {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+   .feature-text h6 {
+      font-size: 2vh;
+      margin: 1vh 0;
+   }
+   .feature-text p {
+      font-size: 1.6vh;
+   }
+   .mySlides img {
+      height: 30vh;
+   }
+   .buy-items img {
+      margin: 0;
+      height: 10vh;
+   }
+   .buy-items2 h1 {
+      margin: 0 0 0 5vh;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+   main {
+      height: 120vh;
+   }
+   .thumbnail-container {
+      max-width: 100%;
+    }
+    .thumbnail:last-child {
+      display: none;
+    }
+   .thumbnail {
+      border-radius: 0;
+      height: 14vh;
+    }
+    .extraArticle1 {
+      height: 50vh;
+      width: 100%;
+      padding: 5vh;
+    }
+   .buy-items h5 {
+      margin: 0 15vh 0 0;
+   }
+   .buy-items2 h1 {
+      margin: 0 0 0 15vh;
+   }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+   .thumbnail:last-child {
+      display: none;
+    }
+}
+@media only screen and (max-width: 300px) {
+   .prev, .next {
+      font-size: 11px;
+   }
+}
+@media only screen and (max-width: 500px) {
+   .prev, .next, .text {
+      font-size: 14px;
+   }
+}

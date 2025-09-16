@@ -1,0 +1,85 @@
+@media only screen and (max-width: 768px) {
+   main {
+      flex-direction: column;
+      height: 200vh;
+   }
+   .small-container {
+      width: 90%;
+      height: 100%;
+   }
+   .main-container {
+      width: 100%;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+   .main-container h2 {
+      font-size: 4vh;
+      margin-bottom: 3vh;
+   }
+   .main-container h5 {
+      font-size: 2.5vh;
+      margin: 0 0 2vh 0;
+   }
+   .main-container p {
+      font-size: 2vh;
+   }
+   .box {
+      width: 100%;
+   }
+   form {
+      height: 125vh;
+      color: #1b1b1b;
+      padding: 4vh 2vh;
+      max-width: 95%;
+   }
+   .form-textarea {
+      height: 18vh;
+   }
+   button {
+      margin: 0.3vh 0;
+      width: 100%;
+   }
+   .input {
+      margin: 1vh 0;
+      max-width: 100%;
+   }
+   .placeholder2 {
+      right: inherit;
+      top: 6vh;
+   }
+   .placeholder, .placeholder2, .placeholder3 {
+      left: 1vh;
+   }
+   .container {
+      height: 45vh;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+   main {
+      height: 200vh;
+      flex-direction: column;
+   }
+   .main-container, .box {
+      width: 100%;
+   }
+   .placeholder2 {
+      right: inherit;
+      left: 51%;
+   }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+   main {
+      height: 200vh;
+      flex-direction: column;
+   }
+   .main-container, .box {
+      width: 100%;
+   }
+   .placeholder2 {
+      right: inherit;
+      left: 51%;
+   }
+}

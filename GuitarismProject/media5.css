@@ -1,0 +1,128 @@
+@media only screen and (max-width: 768px) {
+   main {
+      height: 200vh;
+      width: 100%;
+   }
+   h2 {
+      font-size: 3vh;
+   }
+   .slideshow-container h2 {
+      font-size: 3vh;
+   }
+   .text, hr, .tab-btn:nth-child(4), .tab-btn:nth-child(5), .feature-photo img, .buy-items h5 {
+      display: none;
+   }
+   .prev, .next {
+      top: 40%;
+   }
+   .thumbnail-container {
+      max-width: 100%;
+    }
+   .thumbnail {
+      border-radius: 0;
+      height: 10vh;
+    }
+    .extraArticle1 {
+      height: 50vh;
+      width: 100%;
+      padding: 2vh;
+    }
+    .row-element {
+      padding: 0.5vh;
+   }
+   .row-element p {
+      font-size: 1.2vh;
+   }
+   .content-row .row-element h6 {
+      font-size: 1.8vh;
+   }
+   .feature-photo {
+      width: 0;
+   }
+   .feature-text {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+   .feature-text h6 {
+      font-size: 2vh;
+      margin: 1vh 0;
+   }
+   .feature-text p {
+      font-size: 1.6vh;
+   }
+   .recommend {
+      width: 100%;
+      height: 65vh;
+   }
+   .recommend-item img {
+      height: 30vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+   .recommend-item h6, .recommend-item p {
+      left: 0;
+   }
+   .recommend-item p {
+      bottom: 14vh;
+   }
+   .recommend-item h6 {
+      bottom: 18vh;
+   }
+   .mySlides img {
+      height: 30vh;
+   }
+   .container {
+      height: 70vh;
+      padding: 3vh;
+   }
+   .buy-items img {
+      margin: 0;
+      height: 10vh;
+   }
+   .buy-items2 h1 {
+      margin: 0 0 0 5vh;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+   main {
+      height: 200vh;
+   }
+   .text, hr {
+      display: none;
+   }
+   .container{
+      height: 70vh;
+   }
+   .thumbnail-container {
+      max-width: 100%;
+    }
+   .thumbnail {
+      border-radius: 0;
+      height: 10vh;
+    }
+    .extraArticle1 {
+      height: 50vh;
+      width: 100%;
+      padding: 5vh;
+    }
+    .recommend-item h6, .recommend-item p {
+      left: 0;
+   }
+   .recommend-item h6 {
+      bottom: 3vh;
+   }
+   .recommend-item p {
+      bottom: 0;
+   }
+   .buy-items h5 {
+      margin: 0 15vh 0 0;
+   }
+   .buy-items2 h1 {
+      margin: 0 0 0 15vh;
+   }
+}

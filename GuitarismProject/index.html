@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+   <meta charset="UTF-8">
+    <title>Guitarism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="images/guitar.png">
+    <meta name="keywords" content="Projekt podsumowujący">
+    <meta name="description" content="Projekt podsumowujący - Maksym Demchenko">
+    <meta name="author" content="Maksym Demchenko">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+   </head>
+<body>
+   <div id="header">
+      <div class="sidebar">
+         <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+         <div class="sidebar-container">
+            <div class="head"><p>Mój Koszyk</p></div>
+            <div id="cartItem" class="cart-item-container"><p>Koszyk jest niedokończony</p></div>
+            <div class="foot">
+               <h3>Całość:</h3>
+               <h2 id="total">$0.00</h2>
+            </div>
+         </div>
+      </div>
+   </div>
+   <header>
+      <a href="index.html" class="logo"><img src="images/guitarism.png" alt="logo firmy"></a>
+      <nav class="navbar">
+          <ul class="navMenu">
+              <li class="navItem">
+                  <a href="contact.html" class="navLink">Kontakt</a>
+              </li>
+              <li class="navItem">
+                  <a href="products.html" class="navLink">Produkty</a>
+              </li>
+              <li class="navItem">
+                  <a href="artists.html" class="navLink">Artyści</a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+   </header>
+    <section class="images">
+        <a href="products.html"><img src="images/newGitars1.jpg" alt="1 zdjęcie" class="active"></a>
+        <a href="products.html"><img src="images/newGuitars2.jpg" alt="2 zdjęcie"></a>
+        <a href="products.html"><img src="images/newGuitars3.jpg" alt="3 zdjęcie"></a>
+        <a href="products.html"><img src="images/newGuitars4.jpg" alt="4 zdjęcie"></a>
+        <a href="products.html"><img src="images/newGuitars5.jpg" alt="5 zdjęcie"></a>
+    </section>
+    <article class="container" id="products">
+        <h2 class="hidden"><b>Najpopularniejsze Produkty</b></h2>
+        <section class="hidden tab-box">
+            <button class="tab-btn active">Gitary Elektryczne</button>
+            <button class="tab-btn">Basy</button>
+            <button class="tab-btn">Gitary Akustyczne</button>
+            <button class="tab-btn">Kostki do Gitar</button>
+            <div class="line"></div>
+        </section>
+        <section class="hidden logos">
+            <section class="content active">
+                <article class="logos-slider active">
+                    <a href="products.html"><img src="images/Guitar1.png" alt="electric 1"></a>
+                    <a href="products.html"><img src="images/Guitar2.png" alt="electric 2"></a>
+                    <a href="products.html"><img src="images/Guitar3.png" alt="electric 3"></a>
+                    <a href="products.html"><img src="images/Guitar4.png" alt="electric 4"></a>
+                    <a href="products.html"><img src="images/Guitar5.png" alt="electric 5"></a>
+                    <a href="products.html"><img src="images/Guitar6.png" alt="electric 6"></a>
+                    <a href="products.html"><img src="images/Guitar7.png" alt="electric 7"></a>
+                    <a href="products.html"><img src="images/Guitar8.png" alt="electric 8"></a>
+                </article>
+                <article class="logos-slider active">
+                    <a href="products.html"><img src="images/Guitar1.png" alt="electric 1"></a>
+                    <a href="products.html"><img src="images/Guitar2.png" alt="electric 2"></a>
+                    <a href="products.html"><img src="images/Guitar3.png" alt="electric 3"></a>
+                    <a href="products.html"><img src="images/Guitar4.png" alt="electric 4"></a>
+                    <a href="products.html"><img src="images/Guitar5.png" alt="electric 5"></a>
+                    <a href="products.html"><img src="images/Guitar6.png" alt="electric 6"></a>
+                    <a href="products.html"><img src="images/Guitar7.png" alt="electric 7"></a>
+                    <a href="products.html"><img src="images/Guitar8.png" alt="electric 8"></a>
+                </article>
+            </section>
+            <section class="content">
+                <article class="logos-slider">
+                    <a href="products.html"><img src="images/bass1.png" alt="bass 1"></a>
+                    <a href="products.html"><img src="images/bass2.png" alt="bass 2"></a>
+                    <a href="products.html"><img src="images/bass3.png" alt="bass 3"></a>
+                    <a href="products.html"><img src="images/bass4.png" alt="bass 4"></a>
+                    <a href="products.html"><img src="images/bass5.png" alt="bass 5"></a>
+                    <a href="products.html"><img src="images/bass6.png" alt="bass 6"></a>
+                    <a href="products.html"><img src="images/bass7.png" alt="bass 7"></a>
+                    <a href="products.html"><img src="images/bass8.png" alt="bass 8"></a>
+                </article>
+                <article class="logos-slider">
+                    <a href="products.html"><img src="images/bass1.png" alt="bass 1"></a>
+                    <a href="products.html"><img src="images/bass2.png" alt="bass 2"></a>
+                    <a href="products.html"><img src="images/bass3.png" alt="bass 3"></a>
+                    <a href="products.html"><img src="images/bass4.png" alt="bass 4"></a>
+                    <a href="products.html"><img src="images/bass5.png" alt="bass 5"></a>
+                    <a href="products.html"><img src="images/bass6.png" alt="bass 6"></a>
+                    <a href="products.html"><img src="images/bass7.png" alt="bass 7"></a>
+                    <a href="products.html"><img src="images/bass8.png" alt="bass 8"></a>
+                </article>
+            </section>
+            <section class="content">
+                <article class="logos-slider">
+                    <a href="products.html"><img src="images/acoustic1.png" alt="acoustic 1"></a>
+                    <a href="products.html"><img src="images/acoustic2.png" alt="acoustic 2"></a>
+                    <a href="products.html"><img src="images/acoustic3.png" alt="acoustic 3"></a>
+                    <a href="products.html"><img src="images/acoustic4.png" alt="acoustic 4"></a>
+                    <a href="products.html"><img src="images/acoustic5.png" alt="acoustic 5"></a>
+                    <a href="products.html"><img src="images/acoustic6.png" alt="acoustic 6"></a>
+                    <a href="products.html"><img src="images/acoustic7.png" alt="acoustic 7"></a>
+                    <a href="products.html"><img src="images/acoustic8.png" alt="acoustic 8"></a>
+                </article>
+                <article class="logos-slider">
+                    <a href="products.html"><img src="images/acoustic1.png" alt="acoustic 1"></a>
+                    <a href="products.html"><img src="images/acoustic2.png" alt="acoustic 2"></a>
+                    <a href="products.html"><img src="images/acoustic3.png" alt="acoustic 3"></a>
+                    <a href="products.html"><img src="images/acoustic4.png" alt="acoustic 4"></a>
+                    <a href="products.html"><img src="images/acoustic5.png" alt="acoustic 5"></a>
+                    <a href="products.html"><img src="images/acoustic6.png" alt="acoustic 6"></a>
+                    <a href="products.html"><img src="images/acoustic7.png" alt="acoustic 7"></a>
+                    <a href="products.html"><img src="images/acoustic8.png" alt="acoustic 8"></a>
+                </article>
+            </section>
+            <section class="content">
+                <article class="logos-slider">
+                    <a href="products.html"><img src="images/pick1.png" alt="pick 1"></a>
+                    <a href="products.html"><img src="images/pick2.png" alt="pick 2"></a>
+                    <a href="products.html"><img src="images/pick3.png" alt="pick 3"></a>
+                    <a href="products.html"><img src="images/pick4.png" alt="pick 4"></a>
+                    <a href="products.html"><img src="images/pick5.png" alt="pick 5"></a>
+                    <a href="products.html"><img src="images/pick6.png" alt="pick 6"></a>
+                    <a href="products.html"><img src="images/pick7.png" alt="pick 7"></a>
+                    <a href="products.html"><img src="images/pick8.png" alt="pick 8"></a>
+                </article>
+                <article class="logos-slider">
+                    <a href="products.html"><img src="images/pick1.png" alt="pick 1"></a>
+                    <a href="products.html"><img src="images/pick2.png" alt="pick 2"></a>
+                    <a href="products.html"><img src="images/pick3.png" alt="pick 3"></a>
+                    <a href="products.html"><img src="images/pick4.png" alt="pick 4"></a>
+                    <a href="products.html"><img src="images/pick5.png" alt="pick 5"></a>
+                    <a href="products.html"><img src="images/pick6.png" alt="pick 6"></a>
+                    <a href="products.html"><img src="images/pick7.png" alt="pick 7"></a>
+                    <a href="products.html"><img src="images/pick8.png" alt="pick 8"></a>
+                </article>
+            </section>
+        </section>
+    </article>
+    <main id="news">
+        <article class="article1">
+            <div class="hidden block block1">
+                <img src="images/guitarStock.jpg" alt="Guitars">
+                <div class="divInBlock1">
+                    <p class="biggerP"><b>Jak dobrać gitarę?</b></p>
+                    <p>Zobacz najnowsze kryteria doboru tej jedynej gitary. Na co zwracać uwagę</p>
+                    <a href="https://www.muziker.pl/blog/jak-wybrac-gitare-elektryczna?gad_source=1&gclid=Cj0KCQjwiYOxBhC5ARIsAIvdH52FhHbs7t9ejGxg3PTNUzhZPE7qFdcB5m1lVT4GKAyZzlr0_VEtP3saAoqREALw_wcB" class="check linkInButton"><b>Sprawdź ></b></a>
+                </div>
+            </div>
+            <div class="hidden block block2">
+                <img src="images/customStock.jpg" alt="Custom Guitars">
+                <div class="divInBlock1">
+                    <p class="biggerP"><b>Custom gitary</b></p>
+                    <p>Coś niesamowitego. Rarytasy. Słynne nowinki gitar customowych. Zobacz customowe gitary od gigantów, takich jak Gibson lub Ibanez</p>
+                    <a href="https://www.guitarworld.com/features/best-electric-guitars" class="check linkInButton"><b>Sprawdź ></b></a>
+                </div>
+            </div>
+            <div class="hidden block block3">
+                <img src="images/damned.jpg" alt="Slash new single">
+                <div class="divInBlock1">
+                    <p class="biggerP"><b>Nowy singiel od SLASH</b></p>
+                    <p>Singiel "Killing Floor" już dostępny na wszystkich platformach</p>
+                    <a href="https://open.spotify.com/track/7anM2SqhfeXgFAAnjYVK3e" class="check linkInButton"><b>Posłuchaj ></b></a>
+                </div>
+            </div>
+        </article>
+        <section class="section1">
+            <div class="hidden otherBlock block4">
+                <div class="imgInBlock1">
+                    <img src="images/gibsonStock.webp" alt="Custom Guitars">
+                </div>
+                <div class="divInBlock2">
+                    <p class="biggerP"><b>Ekskluzywne gitary akustyczne od Gibson</b></p>
+                    <p>Piękniejszych gitar akustycznych nie znajdziesz nigdzie indziej! Zobacz najpiękniejsze eksluzywe gitary akustyczne od firmy Gibson</p>
+                    <a href="https://www.gibson.com/en-US/Collection/acoustic-custom-shop" class="check2 linkInButton"><b>Zobacz ></b></a>
+                </div>
+            </div>
+            <div class="hidden otherBlock block5">
+                <div class="imgInBlock1">
+                    <img src="images/ibanezStock.jpg" alt="Custom Guitars">
+                </div>
+                <div class="divInBlock2">
+                    <p class="biggerP"><b>Nowinki od Ibanez</b></p>
+                    <p>Arcydzieła, nie gitary. Nic dodać nic ująć. Ibanez z hukiem zaczyna 2024 rok</p>
+                    <a href="https://www.ibanez.com/eu/news/detail/20231124144232.html" class="check2 linkInButton"><b>Zobacz ></b></a>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="hidden otherBlock block6">
+                <div class="imgInBlock1">
+                    <img src="images/victoria.jpg" alt="Victoria from Maneskin">
+                </div>
+                <div class="divInBlock2">
+                    <p class="biggerP"><b>Z bycia basistką do zostania DJ-em?</b></p>
+                    <p>Popularna basistka z Måneskin, wyruszyła z turą po świecie jako DJ</p>
+                    <a href="https://www.seastarfestival.com/en/news/breaking-news-irresistible-victoria-from-maneskin-brings-her-furious-performance-to-the-sea-star-festival" class="check3 linkInButton"><b>Sprawdź ></b></a>
+                </div>
+            </div>
+            <div class="hidden otherBlock block7">
+                <div class="imgInBlock1">
+                    <img src="images/m72.png" alt="Metallica">
+                </div>
+                <div class="divInBlock2">
+                    <p class="biggerP"><b>Metallica wkrótce kontynnuje słynną turę M72</b></p>
+                    <p>Promując najnowszą dotychczas płytę "72 Seasons", Metallica wyrusza w drugą część tury po świecie, która się zaczęła w 2023 roku</p>
+                    <a href="https://www.metallica.com/news/2022-11-28-m72-world-tour.html" class="check3 linkInButton"><b>Sprawdź ></b></a>
+                </div>
+            </div>
+        </section>
+        <section class="best-solos" id="solos">
+            <h2 class="hidden">Najlepsze Metalowe solówki przy współpracy z Guitarismem</h2>
+            <article class="solo-videos">
+                <div class="solo-boxes box-1">
+                    <img src="images/zakk.png" alt="Zakk" class="image">
+                    <h6 class="hidden">Zakk Wylde</h6>
+                    <h1 class="hidden">No More Tears</h1>
+                    <div class="overlay">
+                        <img src="images/noMoreAlbum.jpg" alt="No More Tears">
+                        <a href="images/no more tears.wav" target="_blank" class="play"><img src="images/play2.png" alt="play"></a>
+                    </div>
+                </div>
+                <div class="solo-boxes box-2">
+                    <img src="images/dimebag.webp" alt="Dimebag" class="image">
+                    <h6 class="hidden">Dimebag Darrell</h6>
+                    <h1 class="hidden">Cementary Gates</h1>
+                    <div class="overlay">
+                        <img src="images/cowboysAlbum.jpg" alt="Cowboys from Hell">
+                        <a href="images/Cemetary Gates Solo.mp3" target="_blank" class="play"><img src="images/play2.png" alt="play"></a>
+                    </div>
+                </div>
+                <div class="solo-boxes box-3">
+                    <img src="images/alexi.png" alt="Alexi" class="image">
+                    <h6 class="hidden">Alexi Laiho</h6>
+                    <h1 class="hidden">Kissing The Shadows</h1>
+                    <div class="overlay">
+                        <img src="images/followAlbum.png" alt="Follow the Reaper">
+                        <a href="images/kissing the shadows.wav" target="_blank" class="play"><img src="images/play2.png" alt="play"></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="merch" id="merch">
+            <h2 class="hidden">Merch</h2>
+            <a href="merch1.html" class="hidden merch-item">
+                <img src="merch/merch0.png" alt="Let's Rock T-Shirt">
+                <h6>Guitarism Let's Rock T-Shirt</h6>
+                <p>$29.99</p>
+                <div class="hidden text text1">Nowe</div>
+            </a>
+            <a href="merch2.html" class="hidden merch-item">
+                <img src="merch/bluza0.png" alt="Endless Hoodie">
+                <h6>Guitarism Endless Hoodie</h6>
+                <p>$29.99</p>
+                <div class="hidden text text2">Nowe</div>
+            </a>
+            <a href="merch3.html" class="hidden merch-item">
+                <div class="hidden text text3">Nowe</div>
+                <img src="merch/hoodie0.png" alt="Small Thing Sweatshirt">
+                <h6>Guitarism Small Thing Sweatshirt</h6>
+                <p>$29.99</p>
+            </a>
+            <a href="merch4.html" class="hidden merch-item">
+                <img src="merch/tshirt5.png" alt="Rock n' Roll T-Shirt">
+                <h6>Guitarism Rock n' Roll T-Shirt</h6>
+                <p>$29.99</p>
+                <div class="hidden text text4">Nowe</div>
+            </a>
+        </section>
+        <a href="kirk.html" class="latest-artist" id="kirk">
+            <section class="text-description">
+                <h1 class="hidden">Najnowszy Zakontraktowany</h1>
+                <div class="underline hidden"></div>
+                <h3 class="hidden">Kirk Hammet</h3>
+            </section>
+            <img src="images/kirk.jpg" alt="kirk hammett">
+        </a>
+    </main>
+    <a class="page-top" href="#header">
+        <p class="hidden">&#8657;</p>
+        <p class="hidden">Do góry</p>
+    </a>
+    <footer>
+        <section class="textBlockFooter">
+            <article class="footerSpace">
+                <nav class="hidden footerDivs divInFooter1">
+                    <h3>Podsekcje</h3>
+                    <p>
+                        <a href="#header">Strona główna</a>
+                        <a href="#products">Najlepsze produkty</a>
+                        <a href="#news">Nowości</a>
+                        <a href="#merch">Merch</a>
+                        <a href="#solos">Najlepsze Solówki</a>
+                        <a href="#kirk">Najnowszy Zakontraktowany</a>
+                        <a href="#sponsors">Sponsorzy</a>
+                    </p>
+                </nav>
+                <nav class="hidden footerDivs divInFooter2">
+                    <h3>O Autorze</h3>
+                    <p>
+                        Autorem strony jest właściciel firmy Guitarism - Maksym Demchenko.<br>
+                        Chodzi do Zespołu Szkół Komunikacji w Poznaniu na ulicy Fredry 13.
+                        <br>
+                        Długi czas próbował on założyć własną firmę, lecz w pewien słoneczny<br>
+                        dzień, słuchając piosenki Pantera - Shattered, podstanowił on<br>
+                        zrobić ten jakże trudny pierwszy krok i tak powstała firma Guitarism.<br>
+                        Był to strzał w dziesiątkę, gdyż od razu ludzie zaczęli darzyć<br>
+                        sympatią trudy włożone w stronę i pomysł Maksyma.<br>
+                        Większość zaczęła polecać usługi Guitarismu znajomym, przez co<br>
+                        biznes Maksyma zaczął się kręcić niczym kula mocy.
+                    </p>
+                </nav>
+                <nav class="hidden footerDivs divInFooter3">
+                    <h3>Kontakt</h3>
+                    <div class="imagesInFooter">
+                        <a href="https://www.facebook.com/guitarismo/">
+                            <div class="boxes box1">
+                                <img src="images/fbLogo.png" alt="Facebook">
+                                <p>Odwiedź nasz Facebook</p>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/guitarism/">
+                            <div class="boxes box2">
+                                <img src="images/igLogo.png" alt="Instagram">
+                                <p>Odwiedź nasz Instagram</p>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/Guitarist_Mag">
+                            <div class="boxes box3">
+                                <img src="images/twitterLogo.png" alt="Twitter">
+                                <p>Odwiedź nasz Twitter</p>
+                            </div>
+                        </a>
+                        <a href="https://www.reddit.com/r/GuitaristsOfReddit/">
+                            <div class="boxes box4">
+                                <img src="images/redditLogo.png" alt="Reddit">
+                                <p>Odwiedź nasz Reddit</p>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </article>
+        </section>
+        <div class="logoInFooter">
+            <img src="images/guitarism.png" alt="logo firmy">
+        </div>
+    </footer>
+    <article class="sponsors" id="sponsors">
+        <h5>Współpracownicy Guitarismu</h5>
+        <div class="slider2">
+            <a href="https://www.ibanez.com/eu/"><img src="images/ibanezLogo1.png" alt="Ibanez"></a>
+            <a href="https://www.gibson.com/en-US/"><img src="images/gibsonLogo1.png" alt="Gibson"></a>
+            <a href="https://pl.yamaha.com/index.html?gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhNF40DplSjuxdndUneYIa-3tgxlXw_u5G34ZMflaSJbq91i_O6mnFUaAt-wEALw_wcB"><img src="images/yamahaLogo1.png" alt="Yamaha"></a>
+            <a href="https://www.jacksonguitars.com/en-PL/start"><img src="images/jacksonLogo1.png" alt="Jackson"></a>
+            <a href="https://www.epiphone.com/en-US/"><img src="images/epiphoneLogo1.png" alt="Epiphone"></a>
+            <a href="https://www.charvel.com/"><img src="images/charvelLogo.png" alt="Charvel"></a>
+            <a href="https://marshall.com/"><img src="images/marshallLogo.png" alt="Marshall"></a>
+            <a href="https://www.espguitars.com/"><img src="images/espLogo.png" alt="ESP"></a>
+        </div>
+        <div class="slider2">
+            <a href="https://www.ibanez.com/eu/"><img src="images/ibanezLogo1.png" alt="Ibanez"></a>
+            <a href="https://www.gibson.com/en-US/"><img src="images/gibsonLogo1.png" alt="Gibson"></a>
+            <a href="https://pl.yamaha.com/index.html?gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhNF40DplSjuxdndUneYIa-3tgxlXw_u5G34ZMflaSJbq91i_O6mnFUaAt-wEALw_wcB"><img src="images/yamahaLogo1.png" alt="Yamaha"></a>
+            <a href="https://www.jacksonguitars.com/en-PL/start"><img src="images/jacksonLogo1.png" alt="Jackson"></a>
+            <a href="https://www.epiphone.com/en-US/"><img src="images/epiphoneLogo1.png" alt="Epiphone"></a>
+            <a href="https://www.charvel.com/"><img src="images/charvelLogo.png" alt="Charvel"></a>
+            <a href="https://marshall.com/"><img src="images/marshallLogo.png" alt="Marshall"></a>
+            <a href="https://www.espguitars.com/"><img src="images/espLogo.png" alt="ESP"></a>
+        </div>
+    </article>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+@media only screen and (max-width: 768px) {
+   .main-text h2 {
+      font-size: 3.5vh;
+      text-align: center;
+      margin: 0 auto;
+   }
+   .main-text .h-1 {
+      flex-basis: 50%;
+   }
+   .main-text .h-2 {
+      flex-basis: 50%;
+   }
+   main, .main2, .main {
+      display: grid;
+      padding: 1vh 2vh;
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .guitar, .guitar:nth-child(2n + 1) {
+      height: 35vh;
+      width: 100%;
+   }
+   .guitar img {
+      height: 60%;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 2vh 0 2vh 0;
+   }
+   .guitar h5, .guitar p, .guitar button {
+      color: #1b1b1b;
+      position: absolute;
+      left: 1vh;
+      font-size: 1.7vh;
+   }
+   .guitar p {
+      font-size: 1.8vh;
+      bottom: 6vh;
+   }
+   .guitar h5 {
+      left: 1vh;
+      right: 1vh;
+      bottom: 9vh;
+   }
+   .guitar button {
+      color: #fff;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 1.6vh;
+      line-height: 1.4vh;
+      width: 90%;
+      bottom: 1vh;
+      border: none;
+      border-radius: 1vh 0 1vh 0;
+      background-color: #84734d;
+      padding: 0 2.5vh;
+      height: 4vh;
+   }
+   .producer img {
+      display: none;
+   }
+   .guitar:nth-child(2n + 1) {
+      margin: 1.5vh 2vh 1.5vh 0;
+      background-color: #9b9b9b;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+   .main-text h2 {
+      font-size: 3.5vh;
+      text-align: center;
+      margin: 0 auto;
+   }
+   .main-text .h-1 {
+      flex-basis: 40%;
+   }
+   .main-text .h-2 {
+      flex-basis: 60%;
+   }
+   .guitar, .guitar:nth-child(4n + 1), .guitar:nth-child(3n + 1) {
+      height: 60vh;
+      width: 100%;
+      margin: 1.5vh 0;
+      background-color: #bfbfbf;
+      color: #fff;
+   }
+   .guitar:nth-child(3n + 1) {
+      margin: 1vh 2vh 1vh 0;
+      background-color: #9b9b9b;
+   }
+   .guitar img {
+      height: 75%;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 2vh 0 2vh 0;
+   }
+   .guitar p {
+      font-size: 1.8vh;
+      bottom: 6vh;
+   }
+   .guitar h5 {
+      left: 1vh;
+      right: 1vh;
+      bottom: 9vh;
+   }
+   .guitar button {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 1.6vh;
+      line-height: 1.4vh;
+      width: 80%;
+      bottom: 1vh;
+      border: none;
+      border-radius: 1vh 0 1vh 0;
+      background-color: #84734d;
+      padding: 0 2.5vh;
+      height: 4vh;
+   }
+   main, .main2, .main {
+      display: grid;
+      padding: 1vh 2vh;
+      grid-template-columns: repeat(3, 1fr);
+   }
+   .producer img {
+      display: none;
+   }
+}

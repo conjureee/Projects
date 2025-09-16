@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+   <meta charset="UTF-8">
+    <title>Guitarism</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="media5.css">
+    <link rel="icon" href="images/guitar.png">
+    <meta name="keywords" content="Projekt podsumowujący">
+    <meta name="description" content="Projekt podsumowujący - Maksym Demchenko">
+    <meta name="author" content="Maksym Demchenko">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="sidebar">
+           <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+           <div class="sidebar-container">
+              <div class="head"><p>Mój Koszyk</p></div>
+              <div id="cartItem" class="cart-item-container"><p>Koszyk jest niedokończony`</p></div>
+              <div class="foot">
+                 <h3>Całość:</h3>
+                 <h2 id="total">$0.00</h2>
+              </div>
+           </div>
+        </div>
+     </div>
+     <header>
+        <a href="index.html" class="logo"><img src="images/guitarism.png" alt="logo firmy"></a>
+        <nav class="navbar">
+            <ul class="navMenu">
+                <li class="navItem">
+                    <a href="contact.html" class="navLink">Kontakt</a>
+                </li>
+                <li class="navItem">
+                    <a href="products.html" class="navLink">Produkty</a>
+                </li>
+                <li class="navItem">
+                    <a href="artists.html" class="navLink">Artyści</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+     </header>
+    <section id="main-container">
+        <section id="content">
+            <img src="images/lets-rock.png" alt="Example Image">
+        </section>
+        <section id="buy">
+            <div class="buy-block">
+                <article class="buy-content">
+                    <section class="buy-items">
+                        <img src="GUITARS/frontV.png" alt="front gitary">
+                        <h5>JS SERIES KING V™ JS32</h5>
+                    </section>
+                    <section class="buy-items2">
+                        <h1>$499.99</h1>
+                        <button href="#">Dodaj Do Koszyka</button>
+                    </section>
+                </article>
+            </div>
+        </section>
+    </section>
+    <main>
+        <article class="slideshow-container">
+            <h2 class="hidden">JS SERIES KING V™ JS32</h2>
+            <div class="hidden mySlides fade">
+                <img src="GUITARS/frontV.png" style="width: 100%;">
+            </div>
+            <div class="hidden mySlides fade">
+                <img src="GUITARS/backV.png" style="width: 100%;">
+            </div>
+            <div class="hidden mySlides fade">
+                <img src="GUITARS/rotatedV.png" style="width: 100%;">
+            </div>
+            <div class="hidden mySlides fade">
+                <img src="GUITARS/stringsV.png" style="width: 100%;">
+            </div>
+            <div class="hidden mySlides fade">
+                <img src="GUITARS/neckV.png" style="width: 100%;">
+            </div>
+            <div class="text">Made in China</div>
+        </article>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <hr>
+        <div class="thumbnail-container">
+            <img class="hidden thumbnail" src="GUITARS/frontV.png" onclick="currentSlides(1)">
+            <img class="hidden thumbnail" src="GUITARS/backV.png" onclick="currentSlides(2)">
+            <img class="hidden thumbnail" src="GUITARS/rotatedV.png" onclick="currentSlides(3)">
+            <img class="hidden thumbnail" src="GUITARS/stringsV.png" onclick="currentSlides(4)">
+            <img class="hidden thumbnail" src="GUITARS/neckV.png" onclick="currentSlides(5)">
+        </div>
+        <article class="extraArticle1" id="text">
+            <h2 class="hidden">Perełka wśród Gitar</h2>
+            <p class="hidden">Seria JS King V™ JS32 oferuje jeden z naszych najbardziej królewskich kształtów i wybitnych wykonawców w przystępnej cenie. Ten potężny King V ma korpus z topoli, przykręcany gryf z klonu typu speed z grafitowym wzmocnieniem i złączem typu szalik zapewniającym solidną stabilność. Podstrunnica amarantowa o promieniu 12"-16" jest wyposażona w 24 progi jumbo i perłowe intarsje typu sharkfin.
+            Inne funkcje obejmują podwójne przetworniki humbuckingowe Jackson o dużej mocy z magnesami ceramicznymi i trójdrożnym przełącznikiem, mostek tremolo Floyd Rose® marki Jackson z podwójną blokadą, standardowe przyciski paska i uszczelnione odlewane tunery.
+            Szybki i zabójczy, King V JS32 ma całkowicie czarny osprzęt i jest dostępny w kolorze czarnym z białymi skosami, błyszczącym czarnym, matowym wojskowym szarością lub białym z czarnymi skosami.</p>
+        </article>
+        <article class="container" id="description">
+            <section class="tab-box">
+                <button class="hidden tab-btn highlighted">Gryf</button>
+                <button class="hidden tab-btn">Korpus</button>
+                <button class="hidden tab-btn">Sprzęt</button>
+                <button class="hidden tab-btn">Elektronika</button>
+                <button class="hidden tab-btn">Dodatki</button>
+                <div class="line"></div>
+            </section>
+            <section class="content-box">
+                <section class="content highlighted">
+                    <div class="content-row">
+                        <div class="row-element">
+                            <h6>Liczba Strun</h6>
+                            <p>6</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Materiał Gryfu</h6>
+                            <p>Klon</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Konstrukcja Gryfu</h6>
+                            <p>Przykręcane ze wzmocnieniem grafitowym i łączeniem szalikowym</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Wiązanie Gryfu</h6>
+                            <p>Biały</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Wykończenie Gryfu</h6>
+                            <p>Satyna</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Długość Skali</h6>
+                            <p>25.5" (64.77 cm)</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Materiał Podstrunnicy</h6>
+                            <p>Amarant</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Promień Podstrunnicy</h6>
+                            <p>Promień złożony 12"–16" (304,8 mm do 406,4 mm)</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Liczba Progów</h6>
+                            <p>24</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Rozmiar Progu</h6>
+                            <p>Landara</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Materiał Nakrętki</h6>
+                            <p>Licencjonowany Jackson® Floyd Rose®</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="content-row">
+                        <div class="row-element">
+                            <h6>Materiał Korpusa</h6>
+                            <p>Topola</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Wykoćzenie Korpusa</h6>
+                            <p>Połysk</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Kształt Korpusa</h6>
+                            <p>King V™</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Style ciała</h6>
+                            <p>King V™</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Kształt Korpusa</h6>
+                            <p>Maple</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="content-row">
+                        <div class="row-element">
+                            <h6>Bridge</h6>
+                            <p>Tremolo z podwójną blokadą na licencji Floyd Rose® Jackson®</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Wykoćzenie Sprzętu</h6>
+                            <p>Czarny</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Tuningowe Maszyny</h6>
+                            <p>Uszczelniony odlew Jackson®</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Pokrętła Sterujące</h6>
+                            <p>W stylu kopuły</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Wskazówka Przełącznika</h6>
+                            <p>Czarna</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Płyta na Gryfie</h6>
+                            <p>Jackson®</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="content-row">
+                        <div class="row-element">
+                            <h6>Przetwornik Bridge</h6>
+                            <p>Humbucking Jackson® o dużej mocy</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Przetwornik Gitary</h6>
+                            <p>Humbucking Jackson® o dużej mocy</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Sterowanie</h6>
+                            <p>Głośność, ton</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Konfiguracja</h6>
+                            <p>Przełącznik 3-pozycyjny: Pozycja 1. Przetworniki przy mostku, Pozycja 2. Przetworniki przy mostku i gryfie, Pozycja 3. Przetworniki przy gryfie</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Konfiguracja</h6>
+                            <p>Humbucker</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>Konfiguracja</h6>
+                            <p>HH</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="content-row">
+                        <div class="row-element">
+                            <h6>Struny</h6>
+                            <p>Stal niklowana (wskaźniki .009-.042)</p>
+                        </div>
+                        <div class="row-element">
+                            <h6>ETUI/TORBA GIG</h6>
+                            <p>Opcjonalna torba koncertowa (p/n 299-1511-106)</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </article>
+    </main>
+    <section class="features">
+        <h2 class="hidden">Cechy i Specyfikacje</h2>
+        <article class="features-box">
+            <section class="feature-text" id="features">
+                <h6 class="hidden">Podstrunnica o promieniu 12"-16" o złożonym promieniu</h6>
+                <p class="hidden">Jackson był pionierem w zastosowaniu innowacyjnej konstrukcji o promieniu złożonym 12"-16", w której podstrunnica stopniowo spłaszcza się w kierunku pięty od bardziej zaokrąglonego profilu przy nakrętce. Zapewnia to wygodne i naturalne brzmienie akordów i riffów w pobliżu nakrętki, z optymalną artykulacją strzępienia i zgięciem bliżej pięty.</p>
+            </section>
+            <section class="hidden feature-photo">
+                <img src="GUITARS/specsV.jpg" alt="guitar specs">
+            </section>
+        </article>
+    </section>
+    <section class="recommend" id="merch">
+        <h2 class="hidden">Polecamy Sprawdzić</h2>
+        <a href="merch2.html" class="hidden recommend-item">
+            <img src="merch/bluza0.png" alt="Endless Hoodie">
+            <h6>Guitarism Endless Hoodie</h6>
+            <p>$29.99</p>
+        </a>
+        <a href="merch1.html" class="hidden recommend-item">
+            <img src="merch/tshirt5.png" alt="Rock n' Roll T-Shirt">
+            <h6>Guitarism Rock n' Roll T-Shirt</h6>
+            <p>$29.99</p>
+        </a>
+        <a href="merch3.html" class="hidden recommend-item">
+            <img src="merch/hoodie0.png" alt="Small Thing Sweatshirt">
+            <h6>Guitarism Small Thing Sweatshirt</h6>
+            <p>$29.99</p>
+        </a>
+    </section>
+    <a class="page-top" href="#header">
+        <p class="hidden">&#8657;</p>
+        <p class="hidden">Do góry</p>
+    </a>
+    <footer>
+        <div class="textBlockFooter">
+            <div class="footerSpace">
+                <nav class="hidden footerDivs divInFooter1">
+                    <h3>Podsekcje</h3>
+                    <p>
+                        <a href="#header">Góra</a>
+                        <a href="#text">Opis gitary</a>
+                        <a href="#description">Szczegółowy opis gitary</a>
+                        <a href="#features">Cechy i specyfikacje</a>
+                        <a href="#merch">Merch</a>
+                        <a href="#sponsors">Sponsorzy</a>
+                    </p>
+                </nav>
+                <nav class="hidden footerDivs divInFooter2">
+                    <h3>O Autorze</h3>
+                    <p>
+                        Autorem strony jest właściciel firmy Guitarism - Maksym Demchenko.<br>
+                        Chodzi do Zespołu Szkół Komunikacji w Poznaniu na ulicy Fredry 13.
+                        <br>
+                        Długi czas próbował on założyć własną firmę, lecz w pewien słoneczny<br>
+                        dzień, słuchając piosenki Pantera - Shattered, podstanowił on<br>
+                        zrobić ten jakże trudny pierwszy krok i tak powstała firma Guitarism.<br>
+                        Był to strzał w dziesiątkę, gdyż od razu ludzie zaczęli darzyć<br>
+                        sympatią trudy włożone w stronę i pomysł Maksyma.<br>
+                        Większość zaczęła polecać usługi Guitarismu znajomym, przez co<br>
+                        biznes Maksyma zaczął się kręcić niczym kula mocy.
+                    </p>
+                </nav>
+                <nav class="hidden footerDivs divInFooter3">
+                    <h3>Kontakt</h3>
+                    <div class="imagesInFooter">
+                        <a href="https://www.facebook.com/guitarismo/">
+                            <div class="boxes box1">
+                                <img src="images/fbLogo.png" alt="Facebook">
+                                <p>Odwiedź nasz Facebook</p>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/guitarism/">
+                            <div class="boxes box2">
+                                <img src="images/igLogo.png" alt="Instagram">
+                                <p>Odwiedź nasz Instagram</p>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/Guitarist_Mag">
+                            <div class="boxes box3">
+                                <img src="images/twitterLogo.png" alt="Twitter">
+                                <p>Odwiedź nasz Twitter</p>
+                            </div>
+                        </a>
+                        <a href="https://www.reddit.com/r/GuitaristsOfReddit/">
+                            <div class="boxes box4">
+                                <img src="images/redditLogo.png" alt="Reddit">
+                                <p>Odwiedź nasz Reddit</p>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="logoInFooter">
+            <img src="images/guitarism.png" alt="logo firmy">
+        </div>
+    </footer>
+    <article class="sponsors" id="sponsors">
+        <h5>Współpracownicy Guitarismu</h5>
+        <div class="slider2">
+            <a href="https://www.ibanez.com/eu/"><img src="images/ibanezLogo1.png" alt="Ibanez"></a>
+            <a href="https://www.gibson.com/en-US/"><img src="images/gibsonLogo1.png" alt="Gibson"></a>
+            <a href="https://pl.yamaha.com/index.html?gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhNF40DplSjuxdndUneYIa-3tgxlXw_u5G34ZMflaSJbq91i_O6mnFUaAt-wEALw_wcB"><img src="images/yamahaLogo1.png" alt="Yamaha"></a>
+            <a href="https://www.jacksonguitars.com/en-PL/start"><img src="images/jacksonLogo1.png" alt="Jackson"></a>
+            <a href="https://www.epiphone.com/en-US/"><img src="images/epiphoneLogo1.png" alt="Epiphone"></a>
+            <a href="https://www.charvel.com/"><img src="images/charvelLogo.png" alt="Charvel"></a>
+            <a href="https://marshall.com/"><img src="images/marshallLogo.png" alt="Marshall"></a>
+            <a href="https://www.espguitars.com/"><img src="images/espLogo.png" alt="ESP"></a>
+        </div>
+        <div class="slider2">
+            <a href="https://www.ibanez.com/eu/"><img src="images/ibanezLogo1.png" alt="Ibanez"></a>
+            <a href="https://www.gibson.com/en-US/"><img src="images/gibsonLogo1.png" alt="Gibson"></a>
+            <a href="https://pl.yamaha.com/index.html?gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhNF40DplSjuxdndUneYIa-3tgxlXw_u5G34ZMflaSJbq91i_O6mnFUaAt-wEALw_wcB"><img src="images/yamahaLogo1.png" alt="Yamaha"></a>
+            <a href="https://www.jacksonguitars.com/en-PL/start"><img src="images/jacksonLogo1.png" alt="Jackson"></a>
+            <a href="https://www.epiphone.com/en-US/"><img src="images/epiphoneLogo1.png" alt="Epiphone"></a>
+            <a href="https://www.charvel.com/"><img src="images/charvelLogo.png" alt="Charvel"></a>
+            <a href="https://marshall.com/"><img src="images/marshallLogo.png" alt="Marshall"></a>
+            <a href="https://www.espguitars.com/"><img src="images/espLogo.png" alt="ESP"></a>
+        </div>
+    </article>
+
+    <script src="main2.js"></script>
+</body>
+</html>
