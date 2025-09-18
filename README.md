@@ -1,4 +1,4 @@
-## 🕛 Projects
+## ✨ Projects
 
 This repository contains a work-in-progress projects that are currently under development, but the work great anyway,
 but features, structure, and code may change as the projects evolve.
